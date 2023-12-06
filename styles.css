@@ -1,0 +1,95 @@
+:root {
+    --main-blue: rgb(23, 180, 228);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+#navbar {
+    background-color: var(--main-blue);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 50px;
+}
+
+
+#welcome-section p {
+    font-size: 3rem;
+    margin: 10px 0; 
+}
+
+#welcome-section h1 {
+    font-size: 5rem; 
+    margin: 10px 0;
+}
+#projects {
+    padding: 50px;
+}
+
+.project-tile {
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: var(--main-blue);
+    color: #fff; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        margin-bottom: 10px;
+    }
+
+    #welcome-section {
+        padding: 30px;
+    }
+
+    #projects {
+        padding: 30px;
+    }
+
+    .project-tile {
+        padding: 15px;
+    }
+
+    .project-link {
+        padding: 8px 15px;
+    }
+}
