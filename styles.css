@@ -49,6 +49,9 @@ body {
 }
 #projects {
     padding: 50px;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; 
 }
 
 .project-tile {
