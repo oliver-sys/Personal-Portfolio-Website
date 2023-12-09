@@ -46,12 +46,13 @@ body {
 #welcome-section h1 {
     font-size: 5rem; 
     margin: 10px 0;
+
 }
 #projects {
     padding: 50px;
-    display: flex;
-    justify-content: space-between; /* Adjust as needed */
-    align-items: center; 
+    flex: 1;
+    padding: 20px;
+    
 }
 
 .project-tile {
@@ -68,6 +69,17 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+#projects > div > h2{
+    padding-top: 20px;
+    padding-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+#projects > h1{
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 600px) {
